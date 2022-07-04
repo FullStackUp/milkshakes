@@ -69,6 +69,8 @@ export class MilkshakeContainerComponent implements OnInit {
         'Preheat oven to 220C/200C fan forced. Cut 3 discs of different sizes from 1 sheet of defrosted puff pastry. Sprinkle with cinnamon sugar. Make a hole, large enough for a straw to fit, in each disc. Bake for 8 minutes or until golden. Make Basic Milkshake, with 1/2 cup canned pie apples and a generous sprinkle of cinnamon sugar. Blend. Place extra pie apple into the base of a glass. Pour over milkshake. Top with whipped cream. Sprinkle with ground cinnamon. Thread the pastry discs onto the straw.',
     },
   ];
+
+  public selectedMilkshake: Milkshake = this.milkshakes[0];
   constructor() {}
 
   ngOnInit(): void {}

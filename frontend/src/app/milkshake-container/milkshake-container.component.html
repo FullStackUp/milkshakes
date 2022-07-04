@@ -1,4 +1,10 @@
 <div class="container d-flex flex-row">
-  <app-milkshake-list class="flex-50 pr-10"></app-milkshake-list>
-  <app-milkshake-details class="flex-50 pl-10"></app-milkshake-details>
+  <app-milkshake-list
+    [milkshakes]="milkshakes"
+    class="flex-50 pr-10"
+  ></app-milkshake-list>
+  <app-milkshake-details
+    [milkshake]="selectedMilkshake"
+    class="flex-50 pl-10"
+  ></app-milkshake-details>
 </div>
