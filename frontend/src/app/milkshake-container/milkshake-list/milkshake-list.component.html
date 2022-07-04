@@ -1,5 +1,10 @@
 <h3 class="mb-20">List of Milkshakes</h3>
 <ul class="mb-20 list-primary">
-  <li *ngFor="let milkshake of milkshakes">{{ milkshake.name }}</li>
+  <li
+    (click)="selectMilkshake(index)"
+    *ngFor="let milkshake of milkshakes; let index = index"
+  >
+    {{ milkshake.name }}
+  </li>
 </ul>
 <button class="btn btn-primary">Add a milkshake</button>

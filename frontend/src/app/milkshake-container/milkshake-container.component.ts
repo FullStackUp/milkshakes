@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Milkshake } from '../interfaces/milkshake.interface';
 
 @Component({
@@ -6,7 +6,7 @@ import { Milkshake } from '../interfaces/milkshake.interface';
   templateUrl: './milkshake-container.component.html',
   styleUrls: ['./milkshake-container.component.scss'],
 })
-export class MilkshakeContainerComponent implements OnInit {
+export class MilkshakeContainerComponent {
   public milkshakes: Milkshake[] = [
     {
       name: 'Vanilla special',
@@ -71,7 +71,10 @@ export class MilkshakeContainerComponent implements OnInit {
   ];
 
   public selectedMilkshake: Milkshake = this.milkshakes[0];
+
   constructor() {}
 
-  ngOnInit(): void {}
+  public selectMilkshake(index: number): void {
+    this.selectedMilkshake = this.milkshakes[index];
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Milkshake } from 'src/app/interfaces/milkshake.interface';
 
 @Component({
@@ -7,7 +7,7 @@ import { Milkshake } from 'src/app/interfaces/milkshake.interface';
   styleUrls: ['./milkshake-details.component.scss'],
 })
 export class MilkshakeDetailsComponent implements OnInit {
-  @Input() public milkshake!: Milkshake;
+  @Input() milkshake!: Milkshake;
 
   constructor() {}
 

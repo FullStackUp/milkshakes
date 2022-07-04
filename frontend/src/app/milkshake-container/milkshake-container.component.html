@@ -1,5 +1,6 @@
 <div class="container d-flex flex-row">
   <app-milkshake-list
+    (changeMilkshake)="selectMilkshake($event)"
     [milkshakes]="milkshakes"
     class="flex-50 pr-10"
   ></app-milkshake-list>

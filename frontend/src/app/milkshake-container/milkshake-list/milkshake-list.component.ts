@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Milkshake } from 'src/app/interfaces/milkshake.interface';
 
 @Component({
@@ -8,7 +8,14 @@ import { Milkshake } from 'src/app/interfaces/milkshake.interface';
 })
 export class MilkshakeListComponent implements OnInit {
   @Input() public milkshakes?: Milkshake[];
+  @Output() private changeMilkshake: EventEmitter<number> =
+    new EventEmitter<number>();
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  public selectMilkshake(index: number): void {
+    this.changeMilkshake.emit(index);
+  }
 }
