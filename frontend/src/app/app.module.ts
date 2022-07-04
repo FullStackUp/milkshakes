@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { MilkshakeListComponent } from './milkshake-list/milkshake-list.component';
-import { MilkshakeDetailsComponent } from './milkshake-details/milkshake-details.component';
+import { MilkshakeContainerComponent } from './milkshake-container/milkshake-container.component';
+import { MilkshakeDetailsComponent } from './milkshake-container/milkshake-details/milkshake-details.component';
+import { MilkshakeListComponent } from './milkshake-container/milkshake-list/milkshake-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MilkshakeListComponent,
-    MilkshakeDetailsComponent
+    MilkshakeDetailsComponent,
+    MilkshakeContainerComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

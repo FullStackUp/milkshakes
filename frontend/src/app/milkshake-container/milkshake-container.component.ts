@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Milkshake } from '../interfaces/milkshake.interface';
 
 @Component({
-  selector: 'app-milkshake-list',
-  templateUrl: './milkshake-list.component.html',
-  styleUrls: ['./milkshake-list.component.scss'],
+  selector: 'app-milkshake-container',
+  templateUrl: './milkshake-container.component.html',
+  styleUrls: ['./milkshake-container.component.scss'],
 })
-export class MilkshakeListComponent implements OnInit {
-  milkshakes: Milkshake[] = [
+export class MilkshakeContainerComponent implements OnInit {
+  public milkshakes: Milkshake[] = [
     {
       name: 'Vanilla special',
       img: 'http://img.taste.com.au/2TWekadq/taste/2016/11/top-10-milkshakes-image-1-64000-1.jpg',
